@@ -17,7 +17,7 @@
   <div class="container nav-container">
     <a href="#home" class="logo">Y<span>A</span>K</a>
     <nav>
-      <a href="#usp"     data-en="USP"         data-ar="عرضي">USP</a>
+      <a href="#home"    data-en="Home"        data-ar="الرئيسية">Home</a>
       <a href="#about"   data-en="About"        data-ar="عني">About</a>
       <a href="#skills"  data-en="Skills"       data-ar="مهاراتي">Skills</a>
       <a href="#experience" data-en="Experience" data-ar="خبراتي">Experience</a>
@@ -31,7 +31,7 @@
     <div class="nav-right">
       <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">EN | AR</button>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <span class="moon">🌙</span><span class="sun">☀️</span>
+        <span class="theme-icon moon">🌙</span><span class="theme-icon sun">☀️</span>
       </button>
       <a href="#contact" class="nav-button" data-en="Let's Talk" data-ar="تواصل معي">Let's Talk</a>
     </div>
@@ -78,10 +78,13 @@
 <!-- ============ USP ============ -->
 <section id="usp" class="section dark-section">
   <div class="container">
-    
+    <div class="section-heading">
+      <p data-en="MY UNIQUE VALUE" data-ar="عرضي الفريد">MY UNIQUE VALUE</p>
+      <h2 data-en="Unique Selling <span>Proposition</span>" data-ar="عرض القيمة <span>الفريدة</span>">Unique Selling <span>Proposition</span></h2>
+    </div>
     <div class="usp-grid">
       <div class="usp-card main-usp">
-        
+        <span class="usp-badge" data-en="English – Main Version" data-ar="النسخة الإنجليزية الرئيسية">English – Main Version</span>
         <blockquote data-en="I help businesses and entrepreneurs build fast, modern websites and AI-powered digital workflows — turning complex tech into clear results, without the corporate price tag." data-ar="أساعد الشركات والأفراد على بناء مواقع ويب حديثة وسريعة وسير عمل رقمية مدعومة بالذكاء الاصطناعي — لتحويل التقنية المعقدة إلى نتائج واضحة، دون تكاليف مبالغ فيها.">I help businesses and entrepreneurs build fast, modern websites and AI-powered digital workflows — turning complex tech into clear results, without the corporate price tag.</blockquote>
         <p class="usp-meta" data-en="For: Startups, small businesses & entrepreneurs who want real tech that actually works." data-ar="لـ: الشركات الناشئة وأصحاب الأعمال الصغيرة الذين يريدون تقنية حقيقية تُحقق نتائج فعلية.">For: Startups, small businesses & entrepreneurs who want real tech that actually works.</p>
       </div>
@@ -693,8 +696,7 @@ function applyLang(lang) {
       }
     }
   });
-
-  langBtn.textContent = lang === 'en' ? 'AR | عربي' : 'EN | English';
+  langBtn.innerHTML = lang === 'en' ? '🌐 AR' : '🌐 EN';
 }
 
 langBtn.addEventListener('click', () => {
