@@ -810,10 +810,10 @@
             </div>
           </div>
           <div class="info-item">
-            <span class="info-icon">📞</span>
+            <span class="info-icon">💬</span>
             <div>
-              <p class="info-label" data-en="Phone" data-ar="الهاتف">Phone</p>
-              <a href="tel:+201279419890">+20 127 941 9890</a>
+              <p class="info-label" data-en="WhatsApp" data-ar="واتساب">WhatsApp</p>
+              <a href="https://wa.me/201279419890" target="_blank" rel="noopener">+20 127 941 9890</a>
             </div>
           </div>
           <div class="info-item">
@@ -834,6 +834,10 @@
           <div class="availability-badge">
             <span class="avail-dot"></span>
             <span data-en="Available for new projects" data-ar="متاحة لمشاريع جديدة">Available for new projects</span>
+          </div>
+          <div class="contact-quick-links">
+            <a href="mailto:yostinaaziz94@gmail.com" class="quick-link email-link" data-en="✉️ Send Email" data-ar="✉️ إرسال بريد">✉️ Send Email</a>
+            <a href="https://wa.me/201279419890" target="_blank" rel="noopener" class="quick-link whatsapp-link" data-en="💬 WhatsApp" data-ar="💬 واتساب">💬 WhatsApp</a>
           </div>
         </div>
       </div>
@@ -902,15 +906,37 @@
     function handleForm(e) {
       e.preventDefault();
       const btn = document.getElementById('fsb');
+      const name    = document.getElementById('cn').value.trim();
+      const email   = document.getElementById('ce').value.trim();
+      const subject = document.getElementById('cs').value.trim();
+      const service = document.getElementById('cv').value;
+      const message = document.getElementById('cm').value.trim();
+
+      const body = [
+        'Name: ' + name,
+        'Email: ' + email,
+        'Service: ' + (service || 'Not specified'),
+        '',
+        message
+      ].join('%0D%0A');
+
+      const mailtoUrl = 'mailto:yostinaaziz94@gmail.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + body;
+
       btn.disabled = true;
-      btn.textContent = currentLang === 'ar' ? 'جارٍ الإرسال...' : 'Sending...';
+      btn.textContent = currentLang === 'ar' ? 'جارٍ الفتح...' : 'Opening...';
+
+      // Open email client
+      window.location.href = mailtoUrl;
+
       setTimeout(() => {
         document.getElementById('contact-form').reset();
         btn.style.display = 'none';
         const ok = document.getElementById('form-ok');
         ok.textContent = ok.getAttribute('data-' + currentLang);
         ok.style.display = 'block';
-      }, 1200);
+      }, 1500);
     }
   </script>
 
