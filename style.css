@@ -135,6 +135,28 @@ nav a:hover {
     gap: 14px;
 }
 
+/* ===== LANG TOGGLE ===== */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.lang-toggle:hover {
+    border-color: var(--accent);
+    background: var(--card);
+}
+
 /* ===== THEME TOGGLE ===== */
 .theme-toggle {
     width: 40px;
@@ -1330,6 +1352,41 @@ footer {
 
 
 /* =========================================
+RTL SUPPORT (ARABIC)
+========================================= */
+
+[dir="rtl"] .highlight {
+    border-left: none;
+    border-right: 2px solid var(--accent);
+    border-radius: 8px 0 0 8px;
+}
+
+[dir="rtl"] .services-grid {
+    border-left: none;
+    border-right: 1px solid var(--border);
+}
+
+[dir="rtl"] .service {
+    border-right: none;
+    border-left: 1px solid var(--border);
+}
+
+[dir="rtl"] .timeline::before {
+    left: auto;
+    right: 120px;
+}
+
+[dir="rtl"] .timeline-content::before {
+    left: auto;
+    right: -57px;
+}
+
+[dir="rtl"] .rates-note {
+    border-left: none;
+    border-right: 3px solid var(--accent);
+}
+
+/* =========================================
 RESPONSIVE
 ========================================= */
 
@@ -1405,11 +1462,20 @@ RESPONSIVE
     .timeline::before {
         left: 0;
     }
+    
+    [dir="rtl"] .timeline::before {
+        left: auto;
+        right: 0;
+    }
 
     .timeline-item {
         display: block;
-
         padding-left: 25px;
+    }
+
+    [dir="rtl"] .timeline-item {
+        padding-left: 0;
+        padding-right: 25px;
     }
 
     .timeline-date {
@@ -1418,6 +1484,11 @@ RESPONSIVE
 
     .timeline-content::before {
         left: -30px;
+    }
+    
+    [dir="rtl"] .timeline-content::before {
+        left: auto;
+        right: -30px;
     }
 
     .education-box {
