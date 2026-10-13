@@ -30,8 +30,6 @@
         <a href="#projects" data-en="Projects" data-ar="أعمالي">Projects</a>
         <a href="#achievements" data-en="Achievements" data-ar="إنجازاتي">Achievements</a>
         <a href="#testimonials" data-en="Testimonials" data-ar="آراء العملاء">Testimonials</a>
-        <a href="#rates" data-en="Rates" data-ar="الأسعار">Rates</a>
-        <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
       </nav>
       <div class="nav-right">
         <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">EN | AR</button>
@@ -49,18 +47,19 @@
       <div class="hero-content">
         <p class="hero-label" data-en="SOFTWARE DEVELOPER • AI • WEB • FREELANCER"
           data-ar="مطوّرة برمجيات • ذكاء اصطناعي • ويب • مستقلة">SOFTWARE DEVELOPER • AI • WEB • FREELANCER</p>
-        <h1 data-en="Building digital <span>experiences</span> that make an impact."
-          data-ar="أبني تجارب رقمية <span>مؤثّرة</span> تُحدث فرقًا حقيقيًا.">Building digital <span>experiences</span>
-          that make an impact.</h1>
+        <h1 class="hero-title">
+          <span class="hero-name" data-en="Yostina Aziz" data-ar="يوستينا عزيز">Yostina Aziz</span>
+          <span class="hero-typed-wrapper">
+            <span class="typewriter-text" id="typewriter-text">Web Developer</span><span
+              class="typewriter-cursor">|</span>
+          </span>
+        </h1>
         <p class="hero-description"
-          data-en="I'm Yostina Aziz Khouzam — a Software Developer & freelancer specialising in web development, AI tools, and digital content."
-          data-ar="أنا يوستينا عزيز خزام — مطوّرة برمجيات ومستقلة متخصصة في تطوير الويب، وأدوات الذكاء الاصطناعي، والمحتوى الرقمي.">
-          I'm Yostina Aziz Khouzam — a Software Developer & freelancer specialising in web development, AI tools, and
+          data-en="I'm Yostina Aziz Khouzam   a Software Developer & freelancer specialising in web development, AI tools, and digital content."
+          data-ar="أنا يوستينا عزيز خزام   مطوّرة برمجيات ومستقلة متخصصة في تطوير الويب، وأدوات الذكاء الاصطناعي، والمحتوى الرقمي.">
+          I'm Yostina Aziz Khouzam a Software Developer & freelancer specialising in web development, AI tools, and
           digital content.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary-btn" data-en="View My Work" data-ar="أعمالي">View My Work</a>
-          <a href="#contact" class="btn secondary-btn" data-en="Hire Me" data-ar="وظّفيني">Hire Me</a>
-        </div>
+
         <div class="hero-stats">
           <div><strong>3.7</strong><span data-en="GPA" data-ar="المعدل">GPA</span></div>
           <div><strong>10+</strong><span data-en="Projects" data-ar="مشروع">Projects</span></div>
@@ -69,76 +68,123 @@
       </div>
       <div class="hero-card">
         <div class="card-glow"></div>
+        <div class="card-glow-secondary"></div>
         <div class="code-window">
-          <div class="window-header"><span></span><span></span><span></span></div>
-          <div class="code-content">
-            <pre><code><span class="cp">const</span> developer = {
-  name: <span class="cs">"Yostina"</span>,
-  role: <span class="cs">"Freelance Dev"</span>,
-  skills: [
-    <span class="cs">"Web Dev"</span>,
-    <span class="cs">"AI Tools"</span>,
-    <span class="cs">"Python"</span>,
-    <span class="cs">"JavaScript"</span>
-  ],
-  available: <span class="cp">true</span>
-};</code></pre>
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="ctrl-dot ctrl-red" title="Close"></span>
+              <span class="ctrl-dot ctrl-yellow" title="Minimize"></span>
+              <span class="ctrl-dot ctrl-green" title="Expand"></span>
+            </div>
+            <div class="window-tab">
+              <span class="tab-icon">⚡</span>
+              <span class="tab-title">developer.ts</span>
+            </div>
+            <div class="window-status-chip">
+              <span class="status-pulse-dot"></span>
+              <span data-en="Available" data-ar="متاح">Available</span>
+            </div>
+          </div>
+          <div class="code-body">
+            <div class="line-numbers" aria-hidden="true">
+              <span>01</span>
+              <span>02</span>
+              <span>03</span>
+              <span>04</span>
+              <span>05</span>
+              <span>06</span>
+              <span>07</span>
+              <span>08</span>
+              <span>09</span>
+              <span>10</span>
+              <span>11</span>
+              <span>12</span>
+            </div>
+            <div class="code-content">
+              <pre><code><span class="syn-comment">// ✨ Passionate Freelancer &amp; Problem Solver</span>
+<span class="syn-kw">const</span> <span class="syn-var">developer</span> <span class="syn-op">=</span> <span class="syn-bracket">{</span>
+  <span class="syn-prop">name</span><span class="syn-punct">:</span> <span class="syn-str">"Yostina Aziz"</span><span class="syn-punct">,</span>
+  <span class="syn-prop">role</span><span class="syn-punct">:</span> <span class="syn-str">"Freelance Software Dev"</span><span class="syn-punct">,</span>
+  <span class="syn-prop">location</span><span class="syn-punct">:</span> <span class="syn-str">"Port Said, Egypt"</span><span class="syn-punct">,</span>
+  <span class="syn-prop">skills</span><span class="syn-punct">:</span> <span class="syn-bracket">[</span>
+    <span class="syn-str">"Web Development"</span><span class="syn-punct">,</span>
+    <span class="syn-str">"AI Tools &amp; Automation"</span><span class="syn-punct">,</span>
+    <span class="syn-str">"Python"</span><span class="syn-punct">,</span>
+    <span class="syn-str">"JavaScript / Vue"</span>
+  <span class="syn-bracket">]</span><span class="syn-punct">,</span>
+  <span class="syn-prop">available</span><span class="syn-punct">:</span> <span class="syn-bool">true</span>
+<span class="syn-bracket">}</span><span class="syn-punct">;</span></code></pre>
+            </div>
+          </div>
+          <div class="code-footer-bar">
+            <div class="footer-left">
+              <span class="footer-branch">⎇ main</span>
+              <span class="footer-check">✓ 0 errors</span>
+            </div>
+            <div class="footer-right">
+              <span class="footer-lang">TypeScript</span>
+              <span class="footer-stat status-hire" data-en="● Open to Hire" data-ar="● متاح للتوظيف">● Open to
+                Hire</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ USP ============ -->
-  <section id="usp" class="section dark-section">
-    <div class="container">
-
-      <div class="usp-grid">
-        <div class="usp-card main-usp">
-          <blockquote
-            data-en="I help businesses and entrepreneurs build fast, modern websites and AI-powered digital workflows — turning complex tech into clear results, without the corporate price tag."
-            data-ar="أساعد الشركات والأفراد على بناء مواقع ويب حديثة وسريعة وسير عمل رقمية مدعومة بالذكاء الاصطناعي — لتحويل التقنية المعقدة إلى نتائج واضحة، دون تكاليف مبالغ فيها.">
-            I help businesses and entrepreneurs build fast, modern websites and AI-powered digital workflows — turning
-            complex tech into clear results, without the corporate price tag.</blockquote>
-          <p class="usp-meta"
-            data-en="For: Startups, small businesses & entrepreneurs who want real tech that actually works."
-            data-ar="لـ: الشركات الناشئة وأصحاب الأعمال الصغيرة الذين يريدون تقنية حقيقية تُحقق نتائج فعلية.">For:
-            Startups, small businesses & entrepreneurs who want real tech that actually works.</p>
-        </div>
-        <div class="usp-card alt-usp">
-          <span class="usp-badge" data-en="Punchier Alternative" data-ar="البديل الأكثر تأثيرًا">Punchier
-            Alternative</span>
-          <blockquote data-en="Your vision deserves code that works — I build it fast, clean & on budget."
-            data-ar="رؤيتك تستحق كودًا يعمل — أبنيه بسرعة وبجودة عالية وفي حدود ميزانيتك.">Your vision deserves code
-            that works — I build it fast, clean & on budget.</blockquote>
-          <p class="usp-meta" data-en="Short, sharp & memorable." data-ar="قصير، مؤثر، لا يُنسى.">Short, sharp &
-            memorable.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ============ ABOUT ============ -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-heading">
-        <p data-en="MY STORY" data-ar="قصتي">MY STORY</p>
-        <h2 data-en="About <span>Me</span>" data-ar="من <span>أنا</span>">About <span>Me</span></h2>
+      <!-- About intro row: heading + USP side-by-side -->
+      <div class="about-intro-row">
+        <div class="about-intro-left">
+          <p class="section-label" data-en="MY STORY" data-ar="قصتي">MY STORY</p>
+          <h2 class="about-heading" data-en="About <span>Me</span>" data-ar="من <span>أنا</span>">About <span>Me</span>
+          </h2>
+        </div>
+        <div class="about-intro-usp">
+          <blockquote class="usp-header-quote"
+            data-en="I help businesses build fast, modern websites &amp; AI-powered workflows   turning complex tech into clear results, without the corporate price tag."
+            data-ar="أساعد الشركات على بناء مواقع ويب حديثة وسير عمل رقمية مدعومة بالذكاء الاصطناعي   لتحويل التقنية المعقدة إلى نتائج واضحة، دون تكاليف مبالغ فيها.">
+            I help businesses build fast, modern websites &amp; AI-powered workflows turning complex tech into clear
+            results, without the corporate price tag.
+          </blockquote>
+          <p class="usp-target"
+            data-en="✦ Built for startups, small businesses &amp; entrepreneurs who want real results."
+            data-ar="✦ مُصمَّم لـ: الشركات الناشئة وأصحاب الأعمال الذين يريدون نتائج حقيقية.">✦ Built for startups,
+            small businesses &amp; entrepreneurs who want real results.</p>
+        </div>
       </div>
+
       <div class="about-grid">
         <div class="about-text">
-          <p data-en="I'm a Computer Engineering graduate from the Arab Academy for Science and Technology (GPA 3.7 — Excellent with High Honors) and a passionate freelance software developer."
-            data-ar="أنا خريجة هندسة حاسبات من الأكاديمية العربية للعلوم والتكنولوجيا بمعدل تراكمي 3.7 — امتياز مع مرتبة الشرف — ومطوّرة برمجيات مستقلة متحمسة.">
-            I'm a Computer Engineering graduate from the Arab Academy for Science and Technology (GPA 3.7 — Excellent
+          <p data-en="I'm a Computer Engineering graduate from the Arab Academy for Science and Technology (GPA 3.7   Excellent with High Honors) and a passionate freelance software developer."
+            data-ar="أنا خريجة هندسة حاسبات من الأكاديمية العربية للعلوم والتكنولوجيا بمعدل تراكمي 3.7   امتياز مع مرتبة الشرف   ومطوّرة برمجيات مستقلة متحمسة.">
+            I'm a Computer Engineering graduate from the Arab Academy for Science and Technology (GPA 3.7 Excellent
             with High Honors) and a passionate freelance software developer.</p>
-          <p data-en="From building Shopify stores for clients in France, to leading a team of virtual assistants, to contributing to AI research — I've always found ways to mix tech with real-world impact."
-            data-ar="من بناء متاجر Shopify لعملاء في فرنسا، إلى قيادة فريق مساعدين افتراضيين، إلى المساهمة في أبحاث الذكاء الاصطناعي — أجد دائمًا طرقًا لدمج التقنية مع التأثير الحقيقي.">
+          <p data-en="From building Shopify stores for clients in France, to leading a team of virtual assistants, to contributing to AI research   I've always found ways to mix tech with real-world impact."
+            data-ar="من بناء متاجر Shopify لعملاء في فرنسا، إلى قيادة فريق مساعدين افتراضيين، إلى المساهمة في أبحاث الذكاء الاصطناعي   أجد دائمًا طرقًا لدمج التقنية مع التأثير الحقيقي.">
             From building Shopify stores for clients in France, to leading a team of virtual assistants, to contributing
-            to AI research — I've always found ways to mix tech with real-world impact.</p>
-          <p data-en="I bring personality, precision, and a deep drive to solve problems. I don't just deliver code — I deliver outcomes."
-            data-ar="أجلب معي الشخصية والدقة والدافع العميق لحل المشكلات. أنا لا أُسلّم كودًا فحسب — بل أُسلّم نتائج.">I
-            bring personality, precision, and a deep drive to solve problems. I don't just deliver code — I deliver
+            to AI research I've always found ways to mix tech with real-world impact.</p>
+          <p data-en="I bring personality, precision, and a deep drive to solve problems. I don't just deliver code   I deliver outcomes."
+            data-ar="أجلب معي الشخصية والدقة والدافع العميق لحل المشكلات. أنا لا أُسلّم كودًا فحسب   بل أُسلّم نتائج.">I
+            bring personality, precision, and a deep drive to solve problems. I don't just deliver code I deliver
             outcomes.</p>
+
+          <div class="about-cta-row">
+            <a href="Yostina_Aziz_Resume.pdf" download="Yostina_Aziz_Resume.pdf" class="btn primary-btn resume-btn"
+              data-en="Download My Resume" data-ar="تحميل السيرة الذاتية">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-en="Download My Resume" data-ar="تحميل السيرة الذاتية">Download My Resume</span>
+            </a>
+            <a href="#projects" class="btn secondary-btn" data-en="See My Work" data-ar="أعمالي">See My Work</a>
+          </div>
         </div>
         <div class="about-highlights">
           <div class="highlight">
@@ -181,13 +227,11 @@
           <h2 data-en="BSc. Computer Engineering" data-ar="بكالوريوس هندسة الحاسبات">BSc. Computer Engineering</h2>
           <h3 data-en="Arab Academy for Science and Technology" data-ar="الأكاديمية العربية للعلوم والتكنولوجيا">Arab
             Academy for Science and Technology</h3>
-          <p data-en="Graduated July 2024 — Excellent with High Honors."
-            data-ar="تخرجت يوليو 2024 — امتياز مع مرتبة الشرف.">Graduated July 2024 — Excellent with High Honors.</p>
+          <p data-en="Graduated July 2024   Excellent with High Honors."
+            data-ar="تخرجت يوليو 2024   امتياز مع مرتبة الشرف.">Graduated July 2024 Excellent with High Honors.</p>
         </div>
         <div class="gpa"><span data-en="GPA" data-ar="المعدل">GPA</span><strong>3.7</strong></div>
       </div>
-
-    </div>
   </section>
 
   <!-- ============ SKILLS ============ -->
@@ -196,7 +240,8 @@
       <div class="section-heading">
         <p data-en="MY EXPERTISE" data-ar="خبراتي التقنية">MY EXPERTISE</p>
         <h2 data-en="Skills &amp; <span>Technologies</span>" data-ar="المهارات <span>والتقنيات</span>">Skills &amp;
-          <span>Technologies</span></h2>
+          <span>Technologies</span>
+        </h2>
       </div>
       <div class="skills-grid">
         <div class="skill-card">
@@ -204,7 +249,8 @@
           <h3 data-en="Programming" data-ar="البرمجة">Programming</h3>
           <div class="tags">
             <span>Python</span><span>JavaScript</span><span>C</span><span>C++</span><span>C#</span><span>Java</span><span>Dart</span><span>Embedded
-              C</span></div>
+              C</span>
+          </div>
         </div>
         <div class="skill-card">
           <div class="skill-number">02</div>
@@ -240,7 +286,7 @@
       <div class="timeline">
 
         <div class="timeline-item">
-          <div class="timeline-date" data-en="Jul 2026 – Present" data-ar="يوليو 2025 – حاليًا">Jul 2025 – Present</div>
+          <div class="timeline-date" data-en="Jul 2026 – Present" data-ar="يوليو 2026 – حاليًا">Jul 2025 – Present</div>
           <div class="timeline-content">
             <h3 data-en="Game Development Track" data-ar="مسار تطوير الألعاب">Game Development Track</h3>
             <h4 data-en="DEPI – Digital Egypt Pioneers Initiative" data-ar="مبادرة رواد مصر الرقمية – DEPI">DEPI –
@@ -281,9 +327,9 @@
           <div class="timeline-content">
             <h3 data-en="Social Media Moderator" data-ar="مشرفة وسائل التواصل الاجتماعي">Social Media Moderator</h3>
             <h4 data-en="Smart Digital Tech" data-ar="Smart Digital Tech">Smart Digital Tech</h4>
-            <p data-en="Managing Facebook and Pinterest pages — creating, scheduling and publishing content using Canva and AI tools."
-              data-ar="إدارة صفحات Facebook وPinterest — إنشاء وجدولة ونشر المحتوى باستخدام Canva وأدوات الذكاء الاصطناعي.">
-              Managing Facebook and Pinterest pages — creating, scheduling and publishing content using Canva and AI
+            <p data-en="Managing Facebook and Pinterest pages   creating, scheduling and publishing content using Canva and AI tools."
+              data-ar="إدارة صفحات Facebook وPinterest   إنشاء وجدولة ونشر المحتوى باستخدام Canva وأدوات الذكاء الاصطناعي.">
+              Managing Facebook and Pinterest pages creating, scheduling and publishing content using Canva and AI
               tools.</p>
           </div>
         </div>
@@ -294,9 +340,9 @@
           <div class="timeline-content">
             <h3 data-en="Software Developer Intern" data-ar="متدربة مطوّرة برمجيات">Software Developer Intern</h3>
             <h4 data-en="SkyTrade" data-ar="SkyTrade">SkyTrade</h4>
-            <p data-en="Front-end development and QA — building and testing web-facing platform features using modern web technologies."
-              data-ar="تطوير واجهة المستخدم وضمان الجودة — بناء واختبار ميزات المنصة باستخدام تقنيات الويب الحديثة.">
-              Front-end development and QA — building and testing web-facing platform features using modern web
+            <p data-en="Front-end development and QA   building and testing web-facing platform features using modern web technologies."
+              data-ar="تطوير واجهة المستخدم وضمان الجودة   بناء واختبار ميزات المنصة باستخدام تقنيات الويب الحديثة.">
+              Front-end development and QA building and testing web-facing platform features using modern web
               technologies.</p>
           </div>
         </div>
@@ -321,9 +367,9 @@
             <h3 data-en="Freelance Web Developer" data-ar="مطوّرة ويب مستقلة">Freelance Web Developer</h3>
             <h4 data-en="People Per Hour (Client: France)" data-ar="People Per Hour (عميل: فرنسا)">People Per Hour
               (Client: France)</h4>
-            <p data-en="Developed and maintained a full Shopify e-commerce website for an international client — earning a 5-star rating."
-              data-ar="طوّرت وأدرت موقع Shopify للتجارة الإلكترونية لعميل دولي — وحصلت على تقييم 5 نجوم.">Developed and
-              maintained a full Shopify e-commerce website for an international client — earning a 5-star rating.</p>
+            <p data-en="Developed and maintained a full Shopify e-commerce website for an international client   earning a 5-star rating."
+              data-ar="طوّرت وأدرت موقع Shopify للتجارة الإلكترونية لعميل دولي   وحصلت على تقييم 5 نجوم.">Developed and
+              maintained a full Shopify e-commerce website for an international client earning a 5-star rating.</p>
           </div>
         </div>
 
@@ -337,52 +383,147 @@
       <div class="section-heading">
         <p data-en="WHAT I OFFER" data-ar="ما أقدمه">WHAT I OFFER</p>
         <h2 data-en="Offered <span>Services</span>" data-ar="الخدمات <span>المقدّمة</span>">Offered
-          <span>Services</span></h2>
+          <span>Services</span>
+        </h2>
       </div>
       <div class="services-grid">
-        <article class="service">
+        <article class="service" data-service-id="web" onclick="openRatesModal('web')">
           <span class="service-icon">01</span>
           <h3 data-en="Web Development" data-ar="تطوير الويب">Web Development</h3>
           <p data-en="Responsive websites and web apps using HTML, CSS, JavaScript, Vue, PHP, WordPress and Shopify."
             data-ar="مواقع متجاوبة وتطبيقات ويب باستخدام HTML وCSS وJavaScript وVue وPHP وWordPress وShopify.">
             Responsive websites and web apps using HTML, CSS, JavaScript, Vue, PHP, WordPress and Shopify.</p>
+          <span class="service-rates-hint" data-en="View rates →" data-ar="اعرض الأسعار →">View rates →</span>
         </article>
-        <article class="service">
+        <article class="service" data-service-id="software" onclick="openRatesModal('software')">
           <span class="service-icon">02</span>
           <h3 data-en="Software Development" data-ar="تطوير البرمجيات">Software Development</h3>
           <p data-en="Custom desktop and web software with clean code and solid architecture using Python, Java and C#."
             data-ar="برمجيات سطح المكتب والويب المخصصة بكود نظيف وبنية متينة باستخدام Python وJava وC#.">Custom desktop
             and web software with clean code and solid architecture using Python, Java and C#.</p>
+          <span class="service-rates-hint" data-en="View rates →" data-ar="اعرض الأسعار →">View rates →</span>
         </article>
-        <article class="service">
+        <article class="service" data-service-id="ai" onclick="openRatesModal('ai')">
           <span class="service-icon">03</span>
-          <h3 data-en="AI & Automation" data-ar="الذكاء الاصطناعي والأتمتة">AI &amp; Automation</h3>
+          <h3 data-en="AI &amp; Automation" data-ar="الذكاء الاصطناعي والأتمتة">AI &amp; Automation</h3>
           <p data-en="AI tool integration, workflow automation with n8n/Zapier, and AI evaluation for research quality."
             data-ar="دمج أدوات الذكاء الاصطناعي وأتمتة سير العمل بـ n8n/Zapier وتقييم الذكاء الاصطناعي لجودة البحث.">AI
             tool integration, workflow automation with n8n/Zapier, and AI evaluation for research quality.</p>
+          <span class="service-rates-hint" data-en="View rates →" data-ar="اعرض الأسعار →">View rates →</span>
         </article>
-        <article class="service">
+        <article class="service" data-service-id="wordpress" onclick="openRatesModal('wordpress')">
           <span class="service-icon">04</span>
-          <h3 data-en="WordPress & Content" data-ar="ووردبريس والمحتوى">WordPress &amp; Content</h3>
+          <h3 data-en="WordPress &amp; Content" data-ar="ووردبريس والمحتوى">WordPress &amp; Content</h3>
           <p data-en="WordPress site management, content publishing, SEO-friendly posts, and digital asset creation with Canva."
             data-ar="إدارة مواقع ووردبريس ونشر المحتوى ومقالات صديقة لمحركات البحث وإنشاء الأصول الرقمية بـ Canva.">
             WordPress site management, content publishing, SEO-friendly posts, and digital asset creation with Canva.
           </p>
+          <span class="service-rates-hint" data-en="View rates →" data-ar="اعرض الأسعار →">View rates →</span>
         </article>
-        <article class="service">
+        <article class="service" data-service-id="social" onclick="openRatesModal('social')">
           <span class="service-icon">05</span>
           <h3 data-en="Social Media Management" data-ar="إدارة وسائل التواصل">Social Media Management</h3>
           <p data-en="Content creation, scheduling and page management for Facebook, Pinterest and other platforms."
             data-ar="إنشاء وجدولة وإدارة صفحات Facebook وPinterest والمنصات الأخرى.">Content creation, scheduling and
             page management for Facebook, Pinterest and other platforms.</p>
+          <span class="service-rates-hint" data-en="View rates →" data-ar="اعرض الأسعار →">View rates →</span>
         </article>
-        <article class="service">
+        <article class="service" data-service-id="game" onclick="openRatesModal('game')">
           <span class="service-icon">06</span>
           <h3 data-en="Game Development" data-ar="تطوير الألعاب">Game Development</h3>
-          <p data-en="2D/2.5D game development using Unity and C# — gameplay systems, UI and interactive mechanics."
-            data-ar="تطوير ألعاب 2D/2.5D باستخدام Unity وC# — أنظمة اللعب والواجهة والميكانيكا التفاعلية.">2D/2.5D game
-            development using Unity and C# — gameplay systems, UI and interactive mechanics.</p>
+          <p data-en="2D/2.5D game development using Unity and C#   gameplay systems, UI and interactive mechanics."
+            data-ar="تطوير ألعاب 2D/2.5D باستخدام Unity وC#   أنظمة اللعب والواجهة والميكانيكا التفاعلية.">2D/2.5D game
+            development using Unity and C# gameplay systems, UI and interactive mechanics.</p>
+          <span class="service-rates-hint" data-en="View rates →" data-ar="اعرض الأسعار →">View rates →</span>
         </article>
+      </div>
+
+      <!-- ============ RATES MODAL ============ -->
+      <div id="rates-modal" class="rates-modal-overlay" onclick="closeRatesModal(event)" role="dialog" aria-modal="true"
+        aria-label="Pricing">
+        <div class="rates-modal-box">
+          <button class="rates-modal-close" onclick="closeRatesModal()" aria-label="Close">&times;</button>
+          <div class="rates-modal-header">
+            <p class="rates-modal-label" data-en="PRICING" data-ar="الأسعار">PRICING</p>
+            <h2 data-en="My Rates &amp; <span>Packages</span>" data-ar="أسعاري <span>وباقاتي</span>">My Rates &amp;
+              <span>Packages</span>
+            </h2>
+            <p class="rates-modal-sub" data-en="💡 All rates are flexible   contact me for a custom quote."
+              data-ar="💡 جميع الأسعار قابلة للتفاوض   تواصل معي للحصول على عرض مخصص.">💡 All rates are flexible contact
+              me for a custom quote.</p>
+          </div>
+          <div class="rates-grid modal-rates-grid">
+            <div class="rate-card" id="rcard-web">
+              <div class="rate-badge" data-en="Starter" data-ar="مبتدئ">Starter</div>
+              <div class="rate-price">$150<span data-en="/project" data-ar="/مشروع">/project</span></div>
+              <h3 data-en="Landing Page" data-ar="صفحة هبوط">Landing Page</h3>
+              <p data-en="Clean, responsive single-page site for personal brand, portfolio or product launch."
+                data-ar="صفحة هبوط متجاوبة ونظيفة للعلامة الشخصية أو المحفظة أو إطلاق المنتج.">Clean, responsive
+                single-page site for personal brand, portfolio or product launch.</p>
+              <ul class="rate-features">
+                <li data-en="✓ Fully responsive" data-ar="✓ تصميم متجاوب بالكامل">✓ Fully responsive</li>
+                <li data-en="✓ Up to 5 sections" data-ar="✓ حتى 5 أقسام">✓ Up to 5 sections</li>
+                <li data-en="✓ Contact form" data-ar="✓ نموذج تواصل">✓ Contact form</li>
+                <li data-en="✓ 1 revision" data-ar="✓ مراجعة واحدة">✓ 1 revision</li>
+                <li data-en="✓ 5–7 days delivery" data-ar="✓ تسليم 5–7 أيام">✓ 5–7 days delivery</li>
+              </ul>
+              <a href="#contact" class="rate-btn" onclick="closeRatesModalDirect()" data-en="Get Started"
+                data-ar="ابدأ الآن">Get Started</a>
+            </div>
+            <div class="rate-card featured-rate" id="rcard-fullsite">
+              <div class="rate-badge popular" data-en="Most Popular" data-ar="الأكثر طلبًا">Most Popular</div>
+              <div class="rate-price">$350<span data-en="/project" data-ar="/مشروع">/project</span></div>
+              <h3 data-en="Full Website" data-ar="موقع كامل">Full Website</h3>
+              <p data-en="Complete multi-page website with CMS integration and full functionality."
+                data-ar="موقع متكامل متعدد الصفحات مع دمج نظام إدارة المحتوى والوظائف الكاملة.">Complete multi-page
+                website with CMS integration and full functionality.</p>
+              <ul class="rate-features">
+                <li data-en="✓ Multi-page responsive" data-ar="✓ متعدد الصفحات ومتجاوب">✓ Multi-page responsive</li>
+                <li data-en="✓ WordPress or custom CMS" data-ar="✓ ووردبريس أو CMS مخصص">✓ WordPress or custom CMS</li>
+                <li data-en="✓ Forms &amp; newsletter" data-ar="✓ نماذج ونشرة إخبارية">✓ Forms &amp; newsletter</li>
+                <li data-en="✓ 3 revisions" data-ar="✓ 3 مراجعات">✓ 3 revisions</li>
+                <li data-en="✓ 2–3 weeks delivery" data-ar="✓ تسليم 2–3 أسابيع">✓ 2–3 weeks delivery</li>
+              </ul>
+              <a href="#contact" class="rate-btn" onclick="closeRatesModalDirect()" data-en="Get Started"
+                data-ar="ابدأ الآن">Get Started</a>
+            </div>
+            <div class="rate-card" id="rcard-software">
+              <div class="rate-badge" data-en="Software" data-ar="برمجيات">Software</div>
+              <div class="rate-price">$200<span data-en="/project" data-ar="/مشروع">/project</span></div>
+              <h3 data-en="Software App" data-ar="تطبيق برمجي">Software App</h3>
+              <p data-en="Custom desktop or web application in Python, JavaScript or Java."
+                data-ar="تطبيق سطح مكتب أو ويب مخصص بـ Python أو JavaScript أو Java.">Custom desktop or web application
+                in Python, JavaScript or Java.</p>
+              <ul class="rate-features">
+                <li data-en="✓ Custom logic &amp; features" data-ar="✓ منطق وميزات مخصصة">✓ Custom logic &amp; features
+                </li>
+                <li data-en="✓ Database integration" data-ar="✓ دمج قاعدة بيانات">✓ Database integration</li>
+                <li data-en="✓ Clean documented code" data-ar="✓ كود نظيف وموثق">✓ Clean documented code</li>
+                <li data-en="✓ 2 revisions" data-ar="✓ مراجعتان">✓ 2 revisions</li>
+                <li data-en="✓ Timeline by scope" data-ar="✓ الجدول حسب النطاق">✓ Timeline by scope</li>
+              </ul>
+              <a href="#contact" class="rate-btn" onclick="closeRatesModalDirect()" data-en="Get Started"
+                data-ar="ابدأ الآن">Get Started</a>
+            </div>
+            <div class="rate-card" id="rcard-hourly">
+              <div class="rate-badge" data-en="Hourly" data-ar="بالساعة">Hourly</div>
+              <div class="rate-price">$15<span data-en="/hour" data-ar="/ساعة">/hour</span></div>
+              <h3 data-en="Freelance &amp; Consultation" data-ar="مستقل واستشارة">Freelance &amp; Consultation</h3>
+              <p data-en="Ongoing support, bug fixes, AI tasks, content and social media management."
+                data-ar="دعم مستمر وإصلاح أخطاء ومهام ذكاء اصطناعي وإدارة محتوى ووسائل تواصل.">Ongoing support, bug
+                fixes, AI tasks, content and social media management.</p>
+              <ul class="rate-features">
+                <li data-en="✓ Flexible scheduling" data-ar="✓ جدول مرن">✓ Flexible scheduling</li>
+                <li data-en="✓ Web, AI &amp; content" data-ar="✓ ويب وذكاء اصطناعي ومحتوى">✓ Web, AI &amp; content</li>
+                <li data-en="✓ WordPress management" data-ar="✓ إدارة ووردبريس">✓ WordPress management</li>
+                <li data-en="✓ Social media support" data-ar="✓ دعم وسائل التواصل">✓ Social media support</li>
+                <li data-en="✓ Quick turnaround" data-ar="✓ تسليم سريع">✓ Quick turnaround</li>
+              </ul>
+              <a href="#contact" class="rate-btn" onclick="closeRatesModalDirect()" data-en="Get Started"
+                data-ar="ابدأ الآن">Get Started</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -391,43 +532,126 @@
   <section id="projects" class="section dark-section">
     <div class="container">
       <div class="section-heading">
-        <p data-en="SELECTED WORK" data-ar="أبرز الأعمال">SELECTED WORK</p>
-        <h2 data-en="Featured <span>Projects</span>" data-ar="المشاريع <span>المميزة</span>">Featured
-          <span>Projects</span></h2>
+        <p data-en="MY WORK" data-ar="أعمالي">MY WORK</p>
+        <h2 data-en="Featured <span>Projects</span>" data-ar="مشاريع <span>مميزة</span>">Featured
+          <span>Projects</span>
+        </h2>
       </div>
       <div class="projects-grid">
 
         <article class="project-card featured">
-          <div class="project-image project-ai"><span>AI + ROBOTICS</span></div>
+          <div class="project-image">
+            <img src="images/project_ai_robot.jpg" alt="AI-Powered Educational Robot" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech-logos">
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#3776AB">
+                    <path
+                      d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.912S0 5.789 0 11.969c0 6.18 3.403 5.96 3.403 5.96h2.031v-2.867s-.109-3.402 3.35-3.402h5.769s3.239.052 3.239-3.13V3.406S18.28 0 11.914 0zm-3.22 1.968a1.042 1.042 0 1 1 0 2.083 1.042 1.042 0 0 1 0-2.083z" />
+                    <path
+                      d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.109S24 18.211 24 12.031c0-6.18-3.403-5.96-3.403-5.96h-2.031v2.867s.109 3.402-3.35 3.402h-5.769s-3.239-.052-3.239 3.13V20.6S5.72 24 12.086 24zm3.22-1.968a1.042 1.042 0 1 1 0-2.083 1.042 1.042 0 0 1 0 2.083z"
+                      fill="#FFD43B" />
+                  </svg>
+                  Python
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#a78bfa">
+                    <path
+                      d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 14.93V15a1 1 0 0 0-2 0v1.93A7.002 7.002 0 0 1 5 9h1a1 1 0 0 0 0-2H5a7.002 7.002 0 0 1 6-6.93V2a1 1 0 0 0 2 0v.07A7.002 7.002 0 0 1 19 9h-1a1 1 0 0 0 0 2h1a7.002 7.002 0 0 1-6 6.93z" />
+                  </svg>
+                  AI
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#60a5fa">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
+                  </svg>
+                  Sensors
+                </span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
-            <p class="project-category" data-en="Graduation Project" data-ar="مشروع التخرج">Graduation Project</p>
+            <p class="project-category" data-en="Graduation Project   Graded Excellent"
+              data-ar="مشروع التخرج   تقييم ممتاز">Graduation Project Graded Excellent</p>
             <h3 data-en="AI-Powered Educational Robot" data-ar="روبوت تعليمي مدعوم بالذكاء الاصطناعي">AI-Powered
               Educational Robot</h3>
             <p data-en="An interactive educational robot combining AI, speech recognition and sensor systems to support classroom learning. Graded Excellent."
               data-ar="روبوت تعليمي تفاعلي يجمع بين الذكاء الاصطناعي والتعرف على الكلام وأنظمة الاستشعار لدعم التعلم. تقييم: ممتاز.">
               An interactive educational robot combining AI, speech recognition and sensor systems to support classroom
               learning. Graded Excellent.</p>
-            <div class="project-tags"><span>AI</span><span>Python</span><span>Robotics</span><span>Sensors</span></div>
+            <div class="project-tags">
+              <span class="tag-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="#a78bfa">
+                  <circle cx="12" cy="12" r="10" />
+                </svg> AI</span>
+              <span class="tag-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="#3776AB">
+                  <rect width="24" height="24" rx="4" />
+                </svg> Python</span>
+              <span>Robotics</span><span>Sensors</span>
+            </div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image project-shopify"><span>SHOPIFY • E-COMMERCE</span></div>
+          <div class="project-image">
+            <img src="images/project_shopify.jpg" alt="Shopify E-Commerce Website" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech-logos">
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#96BF48">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.43-1.41l-1.36-.1-.69-1.63A1.52 1.52 0 0 0 16.11 3.5c-.25 0-.5.063-.72.19l-.7.4-1.09-.27A1.524 1.524 0 0 0 12.14 3.5a1.52 1.52 0 0 0-1.37.85L9.86 6.2l-.78.07a1.524 1.524 0 0 0-1.37 1.67l.97 7.74a.76.76 0 0 0 .75.67h7.54a.76.76 0 0 0 .75-.67l.97-7.74a1.522 1.522 0 0 0 .22-.29zM12 15.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                  Shopify
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#264de4">
+                    <path
+                      d="M2.5 2h19l-1.7 19.4L12 23.5l-7.8-2.1L2.5 2zm8.1 10.5l-.3-3.4H17l.3-3H7.4l.9 9.9 3.7 1 3.7-1 .3-3.5h-3z" />
+                  </svg>
+                  CSS
+                </span>
+                <span class="tech-logo">⭐ 5-Star</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <p class="project-category" data-en="Freelance – International Client (France)"
               data-ar="مستقلة – عميل دولي (فرنسا)">Freelance – International Client (France)</p>
             <h3 data-en="Shopify E-Commerce Website" data-ar="موقع تجارة إلكترونية Shopify">Shopify E-Commerce Website
             </h3>
-            <p data-en="Full Shopify store built and maintained for a French client — product setup, theme customisation and ongoing support. ⭐ 5-star rating."
-              data-ar="متجر Shopify كامل تم تطويره وإدارته لعميل فرنسي — إعداد المنتجات وتخصيص القالب والدعم المستمر. ⭐ تقييم 5 نجوم.">
-              Full Shopify store built and maintained for a French client — product setup, theme customisation and
-              ongoing support. ⭐ 5-star rating.</p>
-            <div class="project-tags"><span>Shopify</span><span>E-Commerce</span><span>CSS</span></div>
+            <p data-en="Full Shopify store built and maintained for a French client   product setup, theme customisation and ongoing support. ⭐ 5-star rating."
+              data-ar="متجر Shopify كامل تم تطويره وإدارته لعميل فرنسي   إعداد المنتجات وتخصيص القالب والدعم المستمر. ⭐ تقييم 5 نجوم.">
+              Full Shopify store built and maintained for a French client product setup, theme customisation and ongoing
+              support. ⭐ 5-star rating.</p>
+            <div class="project-tags"><span>Shopify</span><span>E-Commerce</span><span>CSS/JS</span><span>⭐ Rated
+                5★</span></div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image project-game"><span>UNITY • C#</span></div>
+          <div class="project-image">
+            <img src="images/project_game.jpg" alt="2.5D Platformer Game" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech-logos">
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff">
+                    <path
+                      d="M3 12V6.75l9-5.25 9 5.25V12l-9 5.25L3 12zm16.5-4.5l-7.5-4.35L4.5 7.5 12 11.85l7.5-4.35zM12 13.5L4.5 9.15V15l7.5 4.35 7.5-4.35V9.15L12 13.5z" />
+                  </svg>
+                  Unity
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#9B4F96">
+                    <rect width="24" height="24" rx="4" /><text x="3" y="17" font-size="11" fill="white"
+                      font-weight="bold">C#</text>
+                  </svg>
+                  C#
+                </span>
+                <span class="tech-logo">🕹️ 2.5D</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <p class="project-category" data-en="Game Development" data-ar="تطوير الألعاب">Game Development</p>
             <h3 data-en="2.5D Platformer Game" data-ar="لعبة منصات 2.5D">2.5D Platformer Game</h3>
@@ -435,44 +659,119 @@
               data-ar="لعبة Unity تتضمن مستوى 2.5D كامل وحركة مبنية على الفيزياء وذكاء اصطناعي للأعداء ومقتنيات وواجهة مستخدم متقنة.">
               A Unity game featuring a full 2.5D level, physics-based movement, enemy AI, collectibles and a polished UI
               system.</p>
-            <div class="project-tags"><span>Unity</span><span>C#</span><span>Game Dev</span></div>
+            <div class="project-tags"><span>Unity</span><span>C#</span><span>Game Dev</span><span>DEPI</span></div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image project-web"><span>WEB APPLICATION</span></div>
+          <div class="project-image">
+            <img src="images/project_student_mgmt.jpg" alt="Student Management System" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech-logos">
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#f89820">
+                    <path
+                      d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218" />
+                    <path
+                      d="M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573"
+                      fill="#f89820" />
+                    <path
+                      d="M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.749-.890 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.820" />
+                    <path
+                      d="M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892" />
+                    <path
+                      d="M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118" />
+                    <path
+                      d="M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.542 1.644-2.469 6.197-3.665 5.190-7.624" />
+                    <path
+                      d="M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"
+                      fill="#f89820" />
+                  </svg>
+                  Java
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#4FC08D">
+                    <path d="M24 3.557L13.347 21.443 2.694 3.557H0l13.347 20.886L26.694 3.557H24z" />
+                  </svg>
+                  Vue.js
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#4479A1">
+                    <path
+                      d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.191.214.29.054.104.1.211.143.319l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.46-.57-.251-.307zm-5.85 7.42c-.072 0-.143.01-.213.036l.014-.037c-.048.107-.1.204-.158.299-.128.196-.267.36-.427.505.17.146.35.266.54.36.145.073.27.121.376.121h.042c.186 0 .338-.063.46-.195.128-.137.193-.305.193-.515 0-.22-.047-.38-.14-.504a.523.523 0 0 0-.288-.07zm-2.065-7.42a.48.48 0 0 0-.202.05c.026.108.072.194.13.267.14.173.328.299.525.392.148.071.281.108.396.108h.028c.154 0 .28-.057.387-.176.106-.12.16-.276.16-.47 0-.19-.038-.334-.116-.45-.078-.116-.184-.174-.322-.174-.19 0-.357.063-.48.19-.12.126-.18.288-.18.49l-.001.065-.325-.292zm1.063 8.697L7.75 10.56l3.803-2.497-.6-.913L7.15 9.648 7.15 7.01H6V13.5h1.15v-2.558l3.803 2.497.6-.75zM18 12.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0z" />
+                  </svg>
+                  MySQL
+                </span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <p class="project-category" data-en="Full-Stack Web Dev" data-ar="تطوير ويب متكامل">Full-Stack Web Dev</p>
             <h3 data-en="Student Management System" data-ar="نظام إدارة الطلاب">Student Management System</h3>
-            <p data-en="Multi-role web application with Java backend, Vue.js frontend and MySQL database — CRUD operations and authentication."
-              data-ar="تطبيق ويب متعدد الأدوار بـ Java في الخلفية وVue.js في الواجهة وMySQL — عمليات CRUD ومصادقة المستخدمين.">
-              Multi-role web application with Java backend, Vue.js frontend and MySQL database — CRUD operations and
+            <p data-en="Multi-role web application with Java backend, Vue.js frontend and MySQL database   CRUD operations and authentication."
+              data-ar="تطبيق ويب متعدد الأدوار بـ Java في الخلفية وVue.js في الواجهة وMySQL   عمليات CRUD ومصادقة المستخدمين.">
+              Multi-role web application with Java backend, Vue.js frontend and MySQL database CRUD operations and
               authentication.</p>
             <div class="project-tags"><span>Java</span><span>Vue.js</span><span>MySQL</span><span>HTML/CSS</span></div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image project-compression"><span>ALGORITHMS</span></div>
+          <div class="project-image">
+            <img src="images/project_huffman.jpg" alt="Huffman Text Compression" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech-logos">
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#6272a4">
+                    <path
+                      d="M14.5 2.5c0 1.5-1.5 7.5-1.5 7.5h-2S9.5 4 9.5 2.5a2.5 2.5 0 0 1 5 0zm-2.5 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 1c1.5 0 7.5 1.5 7.5 1.5v2S5 17 3.5 17A2.5 2.5 0 0 1 1 14.5 2.5 2.5 0 0 1 3.5 12zm17 0a2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5c-1.5 0-7.5-1.5-7.5-1.5v-2s6-1.5 7.5-1.5z" />
+                  </svg>
+                  C Language
+                </span>
+                <span class="tech-logo">🌳 Trees</span>
+                <span class="tech-logo">📦 45% less</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <p class="project-category" data-en="Systems Programming" data-ar="برمجة الأنظمة">Systems Programming</p>
             <h3 data-en="Huffman Text Compression" data-ar="ضغط النصوص بـ Huffman">Huffman Text Compression</h3>
-            <p data-en="C program implementing Huffman coding to compress and decompress text files — achieving up to 45% size reduction."
-              data-ar="برنامج C يطبّق ترميز Huffman لضغط وفك ضغط ملفات النصوص — بنسبة تقليص تصل إلى 45%.">C program
-              implementing Huffman coding to compress and decompress text files — achieving up to 45% size reduction.
-            </p>
+            <p data-en="C program implementing Huffman coding to compress and decompress text files   achieving up to 45% size reduction."
+              data-ar="برنامج C يطبّق ترميز Huffman لضغط وفك ضغط ملفات النصوص   بنسبة تقليص تصل إلى 45%.">C program
+              implementing Huffman coding to compress and decompress text files achieving up to 45% size reduction.</p>
             <div class="project-tags"><span>C</span><span>Data Structures</span><span>Algorithms</span></div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image project-mobile"><span>MOBILE APP</span></div>
+          <div class="project-image">
+            <img src="images/project_android.jpg" alt="Task Manager Android App" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech-logos">
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#3DDC84">
+                    <path
+                      d="M17.523 15.341a.87.87 0 0 1-.872.869.87.87 0 0 1-.87-.87.87.87 0 0 1 .87-.87.87.87 0 0 1 .872.87zm-10.17 0a.87.87 0 0 1-.872.869.87.87 0 0 1-.87-.87.87.87 0 0 1 .87-.87.87.87 0 0 1 .872.87zm10.44-4.5H6.207a5.39 5.39 0 0 1 5.389-5.044h.81a5.39 5.39 0 0 1 5.387 5.044zM3.17 6.625l1.392 2.41A6.955 6.955 0 0 0 5.14 18.99v1.137a.875.875 0 0 0 1.75 0v-.755h10.22v.755a.875.875 0 0 0 1.75 0V18.99a6.957 6.957 0 0 0 .578-9.955l1.392-2.41a.437.437 0 1 0-.757-.438l-1.37 2.374a6.93 6.93 0 0 0-1.97-.768 6.946 6.946 0 0 0-1.536-.172h-.811a6.96 6.96 0 0 0-3.506.94L9.515 6.187a.437.437 0 1 0-.757.438z" />
+                  </svg>
+                  Android
+                </span>
+                <span class="tech-logo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#f89820">
+                    <path
+                      d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149z" />
+                  </svg>
+                  Java
+                </span>
+                <span class="tech-logo">🗃️ SQLite</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <p class="project-category" data-en="Mobile Development" data-ar="تطوير الموبايل">Mobile Development</p>
             <h3 data-en="Task Manager Android App" data-ar="تطبيق مدير المهام – Android">Task Manager Android App</h3>
-            <p data-en="Android to-do app with task categories, priority levels, local storage and notification reminders — built with Java & Android Studio."
-              data-ar="تطبيق Android لإدارة المهام مع تصنيفات وأولويات وتخزين محلي وتذكيرات — مبني بـ Java وAndroid Studio.">
-              Android to-do app with task categories, priority levels, local storage and notification reminders — built
+            <p data-en="Android to-do app with task categories, priority levels, local storage and notification reminders   built with Java &amp; Android Studio."
+              data-ar="تطبيق Android لإدارة المهام مع تصنيفات وأولويات وتخزين محلي وتذكيرات   مبني بـ Java وAndroid Studio.">
+              Android to-do app with task categories, priority levels, local storage and notification reminders built
               with Java &amp; Android Studio.</p>
             <div class="project-tags"><span>Java</span><span>Android</span><span>SQLite</span></div>
           </div>
@@ -492,12 +791,12 @@
       </div>
       <div class="achievements-grid">
         <div class="achievement-card">
-          <div class="achievement-icon">🏆</div>
+          <div class="achievement-icon"></div>
           <div class="achievement-body">
             <h3 data-en="Graduated with Excellent & High Honors" data-ar="التخرج بتقدير امتياز مع مرتبة الشرف">Graduated
               with Excellent &amp; High Honors</h3>
-            <p class="achievement-org" data-en="Arab Academy for Science & Technology — 2024"
-              data-ar="الأكاديمية العربية للعلوم والتكنولوجيا — 2024">Arab Academy for Science &amp; Technology — 2024
+            <p class="achievement-org" data-en="Arab Academy for Science & Technology   2024"
+              data-ar="الأكاديمية العربية للعلوم والتكنولوجيا   2024">Arab Academy for Science &amp; Technology 2024
             </p>
             <p data-en="Achieved GPA 3.7 and graduated with the highest distinction in Computer Engineering."
               data-ar="حققت معدل 3.7 وتخرجت بأعلى تقدير في تخصص هندسة الحاسبات.">Achieved GPA 3.7 and graduated with the
@@ -505,12 +804,12 @@
           </div>
         </div>
         <div class="achievement-card">
-          <div class="achievement-icon">🎮</div>
+          <div class="achievement-icon"></div>
           <div class="achievement-body">
             <h3 data-en="Selected for DEPI Game Dev Track" data-ar="الاختيار في مسار تطوير الألعاب – DEPI">Selected for
               DEPI Game Dev Track</h3>
-            <p class="achievement-org" data-en="Digital Egypt Pioneers Initiative — 2025"
-              data-ar="مبادرة رواد مصر الرقمية — 2025">Digital Egypt Pioneers Initiative — 2025</p>
+            <p class="achievement-org" data-en="Digital Egypt Pioneers Initiative   2025"
+              data-ar="مبادرة رواد مصر الرقمية   2025">Digital Egypt Pioneers Initiative 2025</p>
             <p data-en="Competitively selected to join the government-backed DEPI initiative specialising in Unity & C# game development."
               data-ar="تم اختياري تنافسيًا للانضمام إلى مبادرة DEPI الحكومية المتخصصة في تطوير الألعاب بـ Unity وC#.">
               Competitively selected to join the government-backed DEPI initiative specialising in Unity &amp; C# game
@@ -518,47 +817,47 @@
           </div>
         </div>
         <div class="achievement-card">
-          <div class="achievement-icon">🤝</div>
+          <div class="achievement-icon"></div>
           <div class="achievement-body">
             <h3 data-en="Promoted to Team Leader in 5 Months" data-ar="الترقية إلى قائدة فريق في 5 أشهر">Promoted to
               Team Leader in 5 Months</h3>
-            <p class="achievement-org" data-en="Smart Digital Tech — Oct 2025"
-              data-ar="Smart Digital Tech — أكتوبر 2025">Smart Digital Tech — Oct 2025</p>
+            <p class="achievement-org" data-en="Smart Digital Tech   Oct 2025"
+              data-ar="Smart Digital Tech   أكتوبر 2025">Smart Digital Tech Oct 2025</p>
             <p data-en="Rapidly promoted from Social Media Moderator to Team Leader, overseeing a team of virtual assistants."
               data-ar="ترقيت بسرعة من مشرفة وسائل التواصل إلى قائدة فريق، تشرف على فريق من المساعدين الافتراضيين.">
               Rapidly promoted from Social Media Moderator to Team Leader, overseeing a team of virtual assistants.</p>
           </div>
         </div>
         <div class="achievement-card">
-          <div class="achievement-icon">🌍</div>
+          <div class="achievement-icon"></div>
           <div class="achievement-body">
             <h3 data-en="5-Star International Freelance Project" data-ar="مشروع مستقل دولي بتقييم 5 نجوم">5-Star
               International Freelance Project</h3>
-            <p class="achievement-org" data-en="People Per Hour — France Client — 2024"
-              data-ar="People Per Hour — عميل فرنسي — 2024">People Per Hour — France Client — 2024</p>
+            <p class="achievement-org" data-en="People Per Hour   France Client   2024"
+              data-ar="People Per Hour   عميل فرنسي   2024">People Per Hour France Client 2024</p>
             <p data-en="Delivered a complete Shopify e-commerce store for an international client and earned a top 5-star platform rating."
               data-ar="أنجزت متجر Shopify كامل لعميل دولي وحصلت على تقييم 5 نجوم على المنصة.">Delivered a complete
               Shopify e-commerce store for an international client and earned a top 5-star platform rating.</p>
           </div>
         </div>
         <div class="achievement-card">
-          <div class="achievement-icon">🤖</div>
+          <div class="achievement-icon"></div>
           <div class="achievement-body">
             <h3 data-en="AI Research Contributor" data-ar="مساهمة في أبحاث الذكاء الاصطناعي">AI Research Contributor
             </h3>
-            <p class="achievement-org" data-en="Ghost Research / Casper.ai — 2025–2026"
-              data-ar="Ghost Research / Casper.ai — 2025–2026">Ghost Research / Casper.ai — 2025–2026</p>
+            <p class="achievement-org" data-en="Ghost Research / Casper.ai   2025–2026"
+              data-ar="Ghost Research / Casper.ai   2025–2026">Ghost Research / Casper.ai 2025–2026</p>
             <p data-en="Contributed to structured AI research, improving accuracy and quality of AI-generated content outputs."
               data-ar="ساهمت في أبحاث ذكاء اصطناعي منظمة، محسّنةً دقة وجودة مخرجات المحتوى المولّد بالذكاء الاصطناعي.">
               Contributed to structured AI research, improving accuracy and quality of AI-generated content outputs.</p>
           </div>
         </div>
         <div class="achievement-card">
-          <div class="achievement-icon">📱</div>
+          <div class="achievement-icon"></div>
           <div class="achievement-body">
             <h3 data-en="ITI Flutter Certification" data-ar="شهادة Flutter من معهد ITI">ITI Flutter Certification</h3>
-            <p class="achievement-org" data-en="Information Technology Institute — 2022"
-              data-ar="المعهد القومي للاتصالات — 2022">Information Technology Institute — 2022</p>
+            <p class="achievement-org" data-en="Information Technology Institute   2022"
+              data-ar="المعهد القومي للاتصالات   2022">Information Technology Institute 2022</p>
             <p data-en="Completed an intensive Flutter mobile development certification at Egypt's premier IT institute."
               data-ar="أتممت شهادة تطوير الموبايل بـ Flutter من أبرز معاهد تكنولوجيا المعلومات في مصر.">Completed an
               intensive Flutter mobile development certification at Egypt's premier IT institute.</p>
@@ -571,145 +870,102 @@
   <!-- ============ TESTIMONIALS ============ -->
   <section id="testimonials" class="section dark-section">
     <div class="container">
-      <div class="section-heading">
-        <p data-en="SOCIAL PROOF" data-ar="آراء العملاء">SOCIAL PROOF</p>
-        <h2 data-en="What Clients <span>Say</span>" data-ar="ماذا يقول <span>العملاء</span>">What Clients
-          <span>Say</span></h2>
+      <div class="testimonials-top-row">
+        <div class="section-heading" style="margin-bottom:0">
+          <p data-en="SOCIAL PROOF" data-ar="آراء العملاء">SOCIAL PROOF</p>
+          <h2 data-en="What Clients <span>Say</span>" data-ar="ماذا يقول <span>العملاء</span>">What Clients
+            <span>Say</span>
+          </h2>
+        </div>
+        <div class="testimonials-meta">
+          <div class="testimonials-rating-badge">
+            <span class="tmeta-stars">★★★★★</span>
+            <span class="tmeta-score">5.0</span>
+            <span class="tmeta-label" data-en="Average Rating" data-ar="متوسط التقييم">Average Rating</span>
+          </div>
+          <a href="#contact" class="btn primary-btn tmeta-cta" data-en="Work With Me" data-ar="اعمل معي">Work With
+            Me</a>
+        </div>
       </div>
+
       <div class="testimonials-grid">
 
         <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote-icon">❝</div>
           <blockquote
-            data-en="&ldquo;Yostina delivered our Shopify store beautifully — on time, on budget, and with zero headaches. She understood exactly what we needed and went beyond our expectations. Highly recommended!&rdquo;"
-            data-ar="&ldquo;يوستينا سلّمت متجرنا على Shopify بشكل رائع — في الوقت المحدد، وفي حدود الميزانية، وبدون أي متاعب. فهمت تمامًا ما نحتاجه وتجاوزت توقعاتنا. أنصح بها بشدة!&rdquo;">
-            "Yostina delivered our Shopify store beautifully — on time, on budget, and with zero headaches. She
-            understood exactly what we needed and went beyond our expectations. Highly recommended!"</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">M</div>
-            <div>
-              <strong data-en="Marc Lefebvre" data-ar="مارك ليفيفر">Marc Lefebvre</strong>
-              <span data-en="E-Commerce Entrepreneur, France" data-ar="رائد أعمال للتجارة الإلكترونية، فرنسا">E-Commerce
-                Entrepreneur, France</span>
+            data-en="Yostina delivered our Shopify store beautifully   on time, on budget, and with zero headaches. She understood exactly what we needed and went beyond our expectations. Highly recommended!"
+            data-ar="يوستينا سلّمت متجرنا على Shopify بشكل رائع   في الوقت المحدد، وفي حدود الميزانية، وبدون أي متاعب. فهمت تمامًا ما نحتاجه وتجاوزت توقعاتنا. أنصح بها بشدة!">
+            Yostina delivered our Shopify store beautifully on time, on budget, and with zero headaches. She understood
+            exactly what we needed and went beyond our expectations. Highly recommended!</blockquote>
+          <div class="testimonial-footer">
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong data-en="Marc Lefebvre" data-ar="مارك ليفيفر">Marc Lefebvre</strong>
+                <span data-en="E-Commerce Entrepreneur, France"
+                  data-ar="رائد أعمال للتجارة الإلكترونية، فرنسا">E-Commerce Entrepreneur, France</span>
+              </div>
             </div>
+            <div class="stars">★★★★★</div>
           </div>
         </div>
 
         <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote-icon">❝</div>
           <blockquote
-            data-en="&ldquo;Working with Yostina on our AI content quality process was a game-changer. She was precise, fast and incredibly thorough. Our output quality improved significantly within the first week.&rdquo;"
-            data-ar="&ldquo;العمل مع يوستينا على عملية جودة محتوى الذكاء الاصطناعي كان نقطة تحوّل. كانت دقيقة وسريعة ومتأنية بشكل لا يصدق. تحسّنت جودة مخرجاتنا بشكل ملحوظ خلال الأسبوع الأول.&rdquo;">
-            "Working with Yostina on our AI content quality process was a game-changer. She was precise, fast and
-            incredibly thorough. Our output quality improved significantly within the first week."</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">S</div>
-            <div>
-              <strong data-en="Sarah K." data-ar="سارة ك.">Sarah K.</strong>
-              <span data-en="Research Lead, Casper.ai" data-ar="مسؤولة أبحاث، Casper.ai">Research Lead, Casper.ai</span>
+            data-en="Working with Yostina on our AI content quality process was a game-changer. She was precise, fast and incredibly thorough. Our output quality improved significantly within the first week."
+            data-ar="العمل مع يوستينا على عملية جودة محتوى الذكاء الاصطناعي كان نقطة تحوّل. كانت دقيقة وسريعة ومتأنية بشكل لا يصدق. تحسّنت جودة مخرجاتنا بشكل ملحوظ خلال الأسبوع الأول.">
+            Working with Yostina on our AI content quality process was a game-changer. She was precise, fast and
+            incredibly thorough. Our output quality improved significantly within the first week.</blockquote>
+          <div class="testimonial-footer">
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <strong data-en="Sarah K." data-ar="سارة ك.">Sarah K.</strong>
+                <span data-en="Research Lead, Casper.ai" data-ar="مسؤولة أبحاث، Casper.ai">Research Lead,
+                  Casper.ai</span>
+              </div>
             </div>
+            <div class="stars">★★★★★</div>
           </div>
         </div>
 
         <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote-icon">❝</div>
           <blockquote
-            data-en="&ldquo;Yostina manages our WordPress site and social pages with great professionalism. Content is always on-brand, published on time, and our engagement has grown 40% since she joined. She's a true asset.&rdquo;"
-            data-ar="&ldquo;يوستينا تدير موقعنا على ووردبريس وصفحاتنا الاجتماعية باحترافية عالية. المحتوى دائمًا يعكس هويتنا وينشر في الوقت المحدد، وزاد تفاعلنا بنسبة 40% منذ انضمامها. إنها عنصر قيّم حقًا.&rdquo;">
-            "Yostina manages our WordPress site and social pages with great professionalism. Content is always on-brand,
-            published on time, and our engagement has grown 40% since she joined. She's a true asset."</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">A</div>
-            <div>
-              <strong data-en="Ahmed R." data-ar="أحمد ر.">Ahmed R.</strong>
-              <span data-en="CEO, Smart Digital Tech" data-ar="الرئيس التنفيذي، Smart Digital Tech">CEO, Smart Digital
-                Tech</span>
+            data-en="Yostina manages our WordPress site and social pages with great professionalism. Content is always on-brand, published on time, and our engagement has grown 40% since she joined. She's a true asset."
+            data-ar="يوستينا تدير موقعنا على ووردبريس وصفحاتنا الاجتماعية باحترافية عالية. المحتوى دائمًا يعكس هويتنا وينشر في الوقت المحدد، وزاد تفاعلنا بنسبة 40% منذ انضمامها. إنها عنصر قيّم حقًا.">
+            Yostina manages our WordPress site and social pages with great professionalism. Content is always on-brand,
+            published on time, and our engagement has grown 40% since she joined. She's a true asset.</blockquote>
+          <div class="testimonial-footer">
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <strong data-en="Ahmed R." data-ar="أحمد ر.">Ahmed R.</strong>
+                <span data-en="CEO, Smart Digital Tech" data-ar="الرئيس التنفيذي، Smart Digital Tech">CEO, Smart Digital
+                  Tech</span>
+              </div>
             </div>
+            <div class="stars">★★★★★</div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
 
-  <!-- ============ RATES ============ -->
-  <section id="rates" class="section">
-    <div class="container">
-      <div class="section-heading">
-        <p data-en="PRICING" data-ar="الأسعار">PRICING</p>
-        <h2 data-en="My Rates &amp; <span>Packages</span>" data-ar="أسعاري <span>وباقاتي</span>">My Rates &amp;
-          <span>Packages</span></h2>
-      </div>
-      <div class="rates-note">
-        <p data-en="💡 All rates are flexible — contact me for a custom quote based on your project."
-          data-ar="💡 جميع الأسعار قابلة للتفاوض — تواصل معي للحصول على عرض سعر مخصص لمشروعك.">💡 All rates are flexible
-          — <a href="#contact">contact me</a> for a custom quote based on your project.</p>
-      </div>
-      <div class="rates-grid">
-        <div class="rate-card">
-          <div class="rate-badge" data-en="Starter" data-ar="مبتدئ">Starter</div>
-          <div class="rate-price">$150<span data-en="/project" data-ar="/مشروع">/project</span></div>
-          <h3 data-en="Landing Page" data-ar="صفحة هبوط">Landing Page</h3>
-          <p data-en="Clean, responsive single-page site for personal brand, portfolio or product launch."
-            data-ar="صفحة هبوط متجاوبة ونظيفة للعلامة الشخصية أو المحفظة أو إطلاق المنتج.">Clean, responsive single-page
-            site for personal brand, portfolio or product launch.</p>
-          <ul class="rate-features">
-            <li data-en="✓ Fully responsive" data-ar="✓ تصميم متجاوب بالكامل">✓ Fully responsive</li>
-            <li data-en="✓ Up to 5 sections" data-ar="✓ حتى 5 أقسام">✓ Up to 5 sections</li>
-            <li data-en="✓ Contact form" data-ar="✓ نموذج تواصل">✓ Contact form</li>
-            <li data-en="✓ 1 revision" data-ar="✓ مراجعة واحدة">✓ 1 revision</li>
-            <li data-en="✓ 5–7 days delivery" data-ar="✓ تسليم 5–7 أيام">✓ 5–7 days delivery</li>
-          </ul>
-          <a href="#contact" class="rate-btn" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+      <!-- Leave a Review CTA -->
+      <div class="leave-review-cta">
+        <div class="review-cta-content">
+          <p class="review-cta-icon">🌟</p>
+          <div>
+            <h3 data-en="Worked with me before?" data-ar="عملت معي من قبل؟">Worked with me before?</h3>
+            <p data-en="I'd love to hear your feedback   share your experience and help others make the right choice."
+              data-ar="يسعدني سماع ملاحظاتك   شاركني تجربتك وساعد الآخرين على اتخاذ القرار الصحيح.">I'd love to hear
+              your feedback share your experience and help others make the right choice.</p>
+          </div>
         </div>
-        <div class="rate-card featured-rate">
-          <div class="rate-badge popular" data-en="Most Popular" data-ar="الأكثر طلبًا">Most Popular</div>
-          <div class="rate-price">$350<span data-en="/project" data-ar="/مشروع">/project</span></div>
-          <h3 data-en="Full Website" data-ar="موقع كامل">Full Website</h3>
-          <p data-en="Complete multi-page website with CMS integration and full functionality."
-            data-ar="موقع متكامل متعدد الصفحات مع دمج نظام إدارة المحتوى والوظائف الكاملة.">Complete multi-page website
-            with CMS integration and full functionality.</p>
-          <ul class="rate-features">
-            <li data-en="✓ Multi-page responsive" data-ar="✓ متعدد الصفحات ومتجاوب">✓ Multi-page responsive</li>
-            <li data-en="✓ WordPress or custom CMS" data-ar="✓ ووردبريس أو CMS مخصص">✓ WordPress or custom CMS</li>
-            <li data-en="✓ Forms & newsletter" data-ar="✓ نماذج ونشرة إخبارية">✓ Forms &amp; newsletter</li>
-            <li data-en="✓ 3 revisions" data-ar="✓ 3 مراجعات">✓ 3 revisions</li>
-            <li data-en="✓ 2–3 weeks delivery" data-ar="✓ تسليم 2–3 أسابيع">✓ 2–3 weeks delivery</li>
-          </ul>
-          <a href="#contact" class="rate-btn" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
-        </div>
-        <div class="rate-card">
-          <div class="rate-badge" data-en="Software" data-ar="برمجيات">Software</div>
-          <div class="rate-price">$200<span data-en="/project" data-ar="/مشروع">/project</span></div>
-          <h3 data-en="Software App" data-ar="تطبيق برمجي">Software App</h3>
-          <p data-en="Custom desktop or web application in Python, JavaScript or Java."
-            data-ar="تطبيق سطح مكتب أو ويب مخصص بـ Python أو JavaScript أو Java.">Custom desktop or web application in
-            Python, JavaScript or Java.</p>
-          <ul class="rate-features">
-            <li data-en="✓ Custom logic & features" data-ar="✓ منطق وميزات مخصصة">✓ Custom logic &amp; features</li>
-            <li data-en="✓ Database integration" data-ar="✓ دمج قاعدة بيانات">✓ Database integration</li>
-            <li data-en="✓ Clean documented code" data-ar="✓ كود نظيف وموثق">✓ Clean documented code</li>
-            <li data-en="✓ 2 revisions" data-ar="✓ مراجعتان">✓ 2 revisions</li>
-            <li data-en="✓ Timeline by scope" data-ar="✓ الجدول حسب النطاق">✓ Timeline by scope</li>
-          </ul>
-          <a href="#contact" class="rate-btn" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
-        </div>
-        <div class="rate-card">
-          <div class="rate-badge" data-en="Hourly" data-ar="بالساعة">Hourly</div>
-          <div class="rate-price">$15<span data-en="/hour" data-ar="/ساعة">/hour</span></div>
-          <h3 data-en="Freelance & Consultation" data-ar="مستقل واستشارة">Freelance &amp; Consultation</h3>
-          <p data-en="Ongoing support, bug fixes, AI tasks, content and social media management."
-            data-ar="دعم مستمر وإصلاح أخطاء ومهام ذكاء اصطناعي وإدارة محتوى ووسائل تواصل.">Ongoing support, bug fixes,
-            AI tasks, content and social media management.</p>
-          <ul class="rate-features">
-            <li data-en="✓ Flexible scheduling" data-ar="✓ جدول مرن">✓ Flexible scheduling</li>
-            <li data-en="✓ Web, AI & content" data-ar="✓ ويب وذكاء اصطناعي ومحتوى">✓ Web, AI &amp; content</li>
-            <li data-en="✓ WordPress management" data-ar="✓ إدارة ووردبريس">✓ WordPress management</li>
-            <li data-en="✓ Social media support" data-ar="✓ دعم وسائل التواصل">✓ Social media support</li>
-            <li data-en="✓ Quick turnaround" data-ar="✓ تسليم سريع">✓ Quick turnaround</li>
-          </ul>
-          <a href="#contact" class="rate-btn" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
-        </div>
+        <a href="mailto:yostinaaziz94@gmail.com?subject=Testimonial%20for%20Yostina"
+          class="btn secondary-btn review-btn" data-en="Leave a Review ✍️" data-ar="اترك تقييمًا ✍️">Leave a Review
+          ✍️</a>
       </div>
     </div>
   </section>
@@ -725,7 +981,69 @@
         data-ar="متاحة لفرص تطوير الويب والبرمجيات والذكاء الاصطناعي والمحتوى الرقمي حول العالم.">Open to web
         development, software, AI and digital content opportunities worldwide.</p>
 
-      <div class="contact-layout">
+      <div class="contact-wrapper">
+        <!-- Direct Reach Strip Above Form -->
+        <div class="direct-channels-strip">
+          <div class="strip-header">
+            <div class="strip-header-left">
+              <span class="strip-badge-icon">⚡</span>
+              <div>
+                <h4 data-en="Direct Channels" data-ar="تواصل مباشر وفوري">Direct Channels</h4>
+                <p data-en="Click any channel to connect with me instantly"
+                  data-ar="انقر على أي خيار للتواصل الفوري معي">Click any channel to connect with me instantly</p>
+              </div>
+            </div>
+            <div class="strip-status-pill">
+              <span class="avail-dot"></span>
+              <span data-en="Online &amp; Active" data-ar="متصلة ونشطة">Online &amp; Active</span>
+            </div>
+          </div>
+
+          <div class="direct-buttons-row">
+            <!-- Gmail Direct Action -->
+            <button type="button" class="direct-action-btn btn-gmail" onclick="openGmailCompose()"
+              title="Open Gmail Compose">
+              <span class="btn-icon gmail-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    fill="#ea4335" />
+                </svg>
+              </span>
+              <span class="btn-text">
+                <span class="btn-label" data-en="Email (Gmail)" data-ar="البريد (Gmail)">Email (Gmail)</span>
+                <span class="btn-sub">yostinaaziz94@gmail.com</span>
+              </span>
+              <span class="btn-action-tag gmail-tag" data-en="Open ↗" data-ar="فتح ↗">Open ↗</span>
+            </button>
+
+            <!-- WhatsApp Direct Action -->
+            <button type="button" class="direct-action-btn btn-wa" onclick="openWhatsAppChat()"
+              title="Chat on WhatsApp">
+              <span class="btn-icon wa-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25d366">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.69 8.23-8.22 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.06 0 1.21.89 2.39 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.3z" />
+                </svg>
+              </span>
+              <span class="btn-text">
+                <span class="btn-label" data-en="WhatsApp Direct" data-ar="واتساب مباشر">WhatsApp Direct</span>
+                <span class="btn-sub">+20 127 941 9890</span>
+              </span>
+              <span class="btn-action-tag wa-tag" data-en="Chat 💬" data-ar="محادثة 💬">Chat 💬</span>
+            </button>
+
+
+          </div>
+        </div>
+
+        <!-- Sleek Divider -->
+        <div class="contact-or-separator">
+          <span data-en="or send a detailed message below" data-ar="أو أرسل رسالة تفصيلية عبر النموذج أدناه">or send a
+            detailed message below</span>
+        </div>
+
+        <!-- Contact Form -->
         <form id="contact-form" class="contact-form" onsubmit="handleForm(event)">
           <div class="form-row">
             <div class="form-group">
@@ -768,43 +1086,22 @@
             data-ar="✅ تم الإرسال! سأرد عليك خلال 24 ساعة.">✅ Message sent! I'll get back to you within 24 hours.</div>
         </form>
 
-        <div class="contact-info-panel">
-          <div class="info-item">
-            <span class="info-icon">✉️</span>
-            <div>
-              <p class="info-label" data-en="Email" data-ar="البريد الإلكتروني">Email</p>
-              <a href="mailto:yostinaaziz94@gmail.com">yostinaaziz94@gmail.com</a>
-            </div>
+        <!-- Status & Location Strip Below Form -->
+        <div class="contact-status-strip">
+          <div class="status-pill-item">
+            <span class="status-pill-icon">📍</span>
+            <span data-en="Port Said, Egypt • Available Worldwide" data-ar="بورسعيد، مصر • متاح عن بُعد عالمياً">Port
+              Said, Egypt • Available Worldwide</span>
           </div>
-          <div class="info-item">
-            <span class="info-icon">💬</span>
-            <div>
-              <p class="info-label" data-en="WhatsApp" data-ar="واتساب">WhatsApp</p>
-              <a href="https://wa.me/201279419890" target="_blank" rel="noopener">+20 127 941 9890</a>
-            </div>
+          <div class="status-pill-item">
+            <span class="status-pill-icon">⚡</span>
+            <span data-en="Fast Response: Within 24 hours" data-ar="استجابة سريعة: خلال 24 ساعة">Fast Response: Within
+              24 hours</span>
           </div>
-          <div class="info-item">
-            <span class="info-icon">📍</span>
-            <div>
-              <p class="info-label" data-en="Location" data-ar="الموقع">Location</p>
-              <p data-en="Port Said, Egypt (Remote Available)" data-ar="بورسعيد، مصر (متاح عن بُعد)">Port Said, Egypt
-                (Remote Available)</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <span class="info-icon">⏱️</span>
-            <div>
-              <p class="info-label" data-en="Response Time" data-ar="وقت الاستجابة">Response Time</p>
-              <p data-en="Within 24 hours" data-ar="خلال 24 ساعة">Within 24 hours</p>
-            </div>
-          </div>
-          <div class="availability-badge">
+          <div class="status-pill-item status-pill-active">
             <span class="avail-dot"></span>
-            <span data-en="Available for new projects" data-ar="متاحة لمشاريع جديدة">Available for new projects</span>
-          </div>
-          <div class="contact-quick-links">
-            <a href="mailto:yostinaaziz94@gmail.com" class="quick-link email-link" data-en="✉️ Send Email" data-ar="✉️ إرسال بريد">✉️ Send Email</a>
-            <a href="https://wa.me/201279419890" target="_blank" rel="noopener" class="quick-link whatsapp-link" data-en="💬 WhatsApp" data-ar="💬 واتساب">💬 WhatsApp</a>
+            <span data-en="Open for Freelance &amp; Contract" data-ar="متاحة لمشاريع فريلانس وعقود عمل">Open for
+              Freelance &amp; Contract</span>
           </div>
         </div>
       </div>
@@ -821,15 +1118,69 @@
   </footer>
 
   <script>
+    // ============ TYPEWRITER ANIMATION ============
+    const typewriterData = {
+      en: ["Web Developer", "Game Developer", "AI Content Creator"],
+      ar: ["مطوّرة ويب", "مطوّرة ألعاب", "صانعة محتوى AI"]
+    };
+
+    let typeWordIdx = 0;
+    let typeCharIdx = 0;
+    let isDeletingText = false;
+    let typewriterTimer = null;
+
+    function runTypewriter() {
+      clearTimeout(typewriterTimer);
+      const el = document.getElementById('typewriter-text');
+      if (!el) return;
+
+      const lang = (typeof currentLang !== 'undefined' && typewriterData[currentLang]) ? currentLang : 'en';
+      const words = typewriterData[lang];
+      const word = words[typeWordIdx % words.length];
+
+      if (isDeletingText) {
+        typeCharIdx--;
+      } else {
+        typeCharIdx++;
+      }
+
+      el.textContent = word.substring(0, typeCharIdx);
+
+      let speed = isDeletingText ? 50 : 100;
+
+      if (!isDeletingText && typeCharIdx === word.length) {
+        speed = 2000; // Pause at end of word
+        isDeletingText = true;
+      } else if (isDeletingText && typeCharIdx === 0) {
+        isDeletingText = false;
+        typeWordIdx = (typeWordIdx + 1) % words.length;
+        speed = 350; // Pause before next word
+      }
+
+      typewriterTimer = setTimeout(runTypewriter, speed);
+    }
+
+    function resetTypewriter() {
+      clearTimeout(typewriterTimer);
+      typeWordIdx = 0;
+      typeCharIdx = 0;
+      isDeletingText = false;
+      const el = document.getElementById('typewriter-text');
+      if (el) el.textContent = '';
+      runTypewriter();
+    }
+
     // ============ THEME ============
     const themeBtn = document.getElementById('theme-toggle');
     const html = document.documentElement;
     html.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
-    themeBtn.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    }
 
     // ============ LANGUAGE ============
     const langBtn = document.getElementById('lang-toggle');
@@ -845,11 +1196,9 @@
       document.querySelectorAll('[data-en]').forEach(el => {
         const val = el.getAttribute('data-' + lang);
         if (!val) return;
-        // If has children with data-en (e.g. h1 with span), use innerHTML
         if (val.includes('<')) {
           el.innerHTML = val;
         } else {
-          // For inputs/selects use placeholder / textContent carefully
           if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
             el.placeholder = val;
           } else if (el.tagName === 'OPTION') {
@@ -859,22 +1208,109 @@
           }
         }
       });
-      langBtn.innerHTML = lang === 'en' ? '🌐 AR' : '🌐 EN';
+      if (langBtn) {
+        langBtn.innerHTML = lang === 'en' ? '🌐 AR' : '🌐 EN';
+      }
+      resetTypewriter();
     }
 
-    langBtn.addEventListener('click', () => {
-      applyLang(currentLang === 'en' ? 'ar' : 'en');
+    if (langBtn) {
+      langBtn.addEventListener('click', () => {
+        applyLang(currentLang === 'en' ? 'ar' : 'en');
+      });
+    }
+
+    // Initialize Language & Typewriter
+    applyLang(currentLang);
+
+    // ============ RATES MODAL ============
+    const serviceHighlights = {
+      web: ['rcard-web', 'rcard-fullsite'],
+      software: ['rcard-software'],
+      ai: ['rcard-hourly'],
+      wordpress: ['rcard-fullsite', 'rcard-hourly'],
+      social: ['rcard-hourly'],
+      game: ['rcard-software']
+    };
+
+    function openRatesModal(serviceId) {
+      const modal = document.getElementById('rates-modal');
+      if (!modal) return;
+      document.querySelectorAll('.rate-card').forEach(c => c.classList.remove('rate-highlight'));
+      const toHighlight = serviceHighlights[serviceId] || [];
+      toHighlight.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('rate-highlight');
+      });
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeRatesModal(e) {
+      const modal = document.getElementById('rates-modal');
+      if (!modal) return;
+      if (!e || e.target === modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeRatesModalDirect() {
+      const modal = document.getElementById('rates-modal');
+      if (modal) modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeRatesModalDirect();
     });
 
-    // Apply on load
-    applyLang(currentLang);
+    // ============ DIRECT CONTACT HUB ACTIONS ============
+    function openGmailCompose() {
+      const email = 'yostinaaziz94@gmail.com';
+      const subject = encodeURIComponent('Project Inquiry - Let\'s Work Together');
+      const body = encodeURIComponent('Hi Yostina,\n\nI came across your portfolio and would like to discuss a project with you.\n\nProject Details:\n- Service needed: \n- Estimated timeline: \n- Budget range: \n\nLooking forward to hearing from you!');
+      const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + email + '&su=' + subject + '&body=' + body;
+      window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    function openWhatsAppChat() {
+      const waUrl = 'https://wa.me/201279419890?text=' + encodeURIComponent('Hello Yostina! I saw your portfolio and would like to discuss a project.');
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    function copyEmailAddress(btn) {
+      const email = 'yostinaaziz94@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const textSpan = (btn && btn.querySelector('.copy-text')) || btn;
+        const prevText = textSpan.textContent;
+        textSpan.textContent = currentLang === 'ar' ? '✓ تم النسخ!' : '✓ Copied!';
+        if (btn) btn.classList.add('copied-active');
+        setTimeout(() => {
+          textSpan.textContent = prevText;
+          if (btn) btn.classList.remove('copied-active');
+        }, 2200);
+      }).catch(() => {
+        const temp = document.createElement('textarea');
+        temp.value = email;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        document.body.removeChild(temp);
+        const textSpan = (btn && btn.querySelector('.copy-text')) || btn;
+        textSpan.textContent = currentLang === 'ar' ? '✓ تم النسخ!' : '✓ Copied!';
+        setTimeout(() => {
+          textSpan.textContent = currentLang === 'ar' ? 'نسخ' : 'Copy';
+        }, 2200);
+      });
+    }
 
     // ============ CONTACT FORM ============
     function handleForm(e) {
       e.preventDefault();
       const btn = document.getElementById('fsb');
-      const name    = document.getElementById('cn').value.trim();
-      const email   = document.getElementById('ce').value.trim();
+      const name = document.getElementById('cn').value.trim();
+      const email = document.getElementById('ce').value.trim();
       const subject = document.getElementById('cs').value.trim();
       const service = document.getElementById('cv').value;
       const message = document.getElementById('cm').value.trim();
@@ -894,7 +1330,6 @@
       btn.disabled = true;
       btn.textContent = currentLang === 'ar' ? 'جارٍ الفتح...' : 'Opening...';
 
-      // Open email client
       window.location.href = mailtoUrl;
 
       setTimeout(() => {
@@ -905,6 +1340,7 @@
         ok.style.display = 'block';
       }, 1500);
     }
+
   </script>
 
 </body>
